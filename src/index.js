@@ -1,17 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reactDom from 'react-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import BadgeNew from './pages/badgenew.js';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const container = document.getElementById("root");
+reactDom.render(<BadgeNew/>, container);
+
+
+
+
+// Javascript normal
+
+// const element = createElement("h1");
+// element.innerText = "Hola, como vas"
+// const container = document.getElementById("root")
+// container.appendChild(element)
+
+// Con react
+
+// const jsx = <h1> Hola, sirve por favor</h1>
+// React.createElement("etiqueta",{props/ propiedades}, "los hijos")
+// const element = React.createElement(
+// 	"a",
+// 	{href:"https://platzi.com"}, 
+// 	"Platzi");
+// const container = document.getElementById("root");
+// // reactDom.render(_que_, _donde_)
+// reactDom.render(element, container)
+
